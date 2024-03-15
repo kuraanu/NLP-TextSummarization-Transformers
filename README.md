@@ -16,7 +16,7 @@ TF-IDF based summarization and TextRank based summarization
 **Zero-Shot Model**
 To enhance text summarization for news articles, a zero-shot learning approach is implemented using the T5 (Text-to-Text Transfer Transformer) model. The T5 model is fine-tuned specifically for summarization without explicit training on the dataset. T5 is a transformer-based architecture that handles all NLP tasks as text-to-text problems, which allows it to adapt to various domains. This zero-shot learning approach enables the model to generalize its summarization capabilities to news articles, capitalizing on the pre-existing knowledge encoded during pre-training.
 
-**Fine Tuning Pre-Trained Seq2seq Model **
+****Fine Tuning Pre-Trained Seq2seq Model** **
 For the task of extractive summarization, the model undergoes fine-tuning through a two-step process involving tokenization and training. The tokenization process is carried out using the AutoTokenizer from the Hugging Face transformers library. Each article undergoes tokenization with the addition of a prefix, "summarize:," guiding the model in comprehending the summarization task
 
 **Transformers**
